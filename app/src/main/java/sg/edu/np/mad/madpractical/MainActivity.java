@@ -1,10 +1,12 @@
-package com.example.userapplication;
+package sg.edu.np.mad.madpractical;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import sg.edu.np.mad.madpractical.R;
 
 public class MainActivity extends AppCompatActivity {
 
