@@ -23,14 +23,18 @@ public class MainActivity extends AppCompatActivity {
         // Changes the TextView values
         TextView name = findViewById(R.id.nameTextView);
         TextView description = findViewById(R.id.descriptionTextView);
-        name.setText(user.getName());
-        description.setText(user.getDescription());
+        name.setText(user.name);
+        description.setText(user.description);
+//        name.setText(user.getName());
+//        description.setText(user.getDescription());
 
         // Creates and sets event listeners for the buttons
         Button followButton = findViewById(R.id.followButton);
         followButton.setOnClickListener(v -> {
-            user.setFollowed(!user.isFollowed());
-            followButton.setText(user.isFollowed() ? "Unfollow" : "Follow");
+            user.followed = !user.followed;
+            followButton.setText(user.followed ? "Unfollow" : "Follow");
+//            user.setFollowed(!user.isFollowed());
+//            followButton.setText(user.isFollowed() ? "Unfollow" : "Follow");
         });
     }
 }
